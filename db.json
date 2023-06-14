@@ -1,0 +1,129 @@
+{
+  "events": [
+    {
+      "id": 4,
+      "title": "lima 01",
+      "description": "desc lima 01",
+      "region": "1",
+      "createdby": "Alex Aguilar",
+      "date": "2023-06-13T03:50:36.306Z"
+    },
+    {
+      "id": 7,
+      "title": "lima 04",
+      "description": "lima 04",
+      "region": "1",
+      "createdby": "Alex Aguilar",
+      "date": "2023-06-13T03:51:01.812Z"
+    },
+    {
+      "id": 8,
+      "title": "lima 031",
+      "description": "desc lima 03",
+      "region": "1",
+      "createdby": "",
+      "date": "2023-06-13T22:58:30.971Z"
+    },
+    {
+      "id": 11,
+      "title": "g01",
+      "description": "g067",
+      "region": "1",
+      "createdby": "Alex Aguilar",
+      "date": "2023-06-13T03:12:41.108Z"
+    },
+    {
+      "id": 15,
+      "title": "temprano",
+      "description": "temprano04",
+      "region": "1",
+      "createdby": "Alex Aguilar",
+      "date": "2023-06-13T02:11:23.998Z"
+    },
+    {
+      "title": "evento cusco 01",
+      "description": "descripcion evento cusco 01",
+      "region": "2",
+      "createdby": "pablo.choy@gmail.com",
+      "date": "2023-06-13T03:49:16.369Z",
+      "id": 26
+    },
+    {
+      "title": "evento cusco 02",
+      "description": "desc evento cusco 02",
+      "region": "2",
+      "createdby": "pablo.choy@gmail.com",
+      "date": "2023-06-13T03:49:29.778Z",
+      "id": 27
+    },
+    {
+      "title": "arequipa 01",
+      "description": "desc arequipa 01",
+      "region": "3",
+      "createdby": "abc@gmail.com",
+      "date": "2023-06-13T03:50:01.531Z",
+      "id": 28
+    },
+    {
+      "title": "he",
+      "description": "desc for he",
+      "region": "1",
+      "createdby": "alex.aguilar@gmail.com",
+      "date": "2023-06-13T03:54:48.971Z",
+      "id": 29
+    },
+    {
+      "id": 30,
+      "title": "evento cusco 03",
+      "description": "evento cusco 03",
+      "region": "2",
+      "createdby": "pablo.choy@gmail.com",
+      "date": "2023-06-13T23:09:03.792Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "luis.garcia@gmail.com",
+      "email": "luis.garcia@gmail.com",
+      "password": "clave01",
+      "region": "2"
+    },
+    {
+      "id": 2,
+      "username": "alex.aguilar@gmail.com",
+      "email": "alex.aguilar@gmail.com",
+      "password": "clave02",
+      "region": "1"
+    },
+    {
+      "id": 3,
+      "username": "pablo.choy@gmail.com",
+      "email": "pablo.choy@gmail.com",
+      "password": "clave03",
+      "region": "2"
+    },
+    {
+      "username": "",
+      "email": "abc@gmail.com",
+      "password": "abc",
+      "region": "3",
+      "createdon": "2023-06-10T02:49:45.911Z",
+      "id": 4
+    }
+  ],
+  "regions": [
+    {
+      "id": 1,
+      "regionname": "Lima"
+    },
+    {
+      "id": 2,
+      "regionname": "Cusco"
+    },
+    {
+      "id": 3,
+      "regionname": "Arequipa"
+    }
+  ]
+}
