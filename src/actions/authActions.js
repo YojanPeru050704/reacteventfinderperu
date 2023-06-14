@@ -1,6 +1,5 @@
 import {  REGISTER_USER, GET_AUTH_USER , ERROR_USER, EXISTS_AUTH_USER, CLEAR_AUTH_USER, NEW_REGISTRATION_ACTION 
 } from './types'
-import setAuthToken from '../utils/setAuthToken'
 
 //AUTH USER
 export const authenticateUser = (user)  => async dispatch => {
