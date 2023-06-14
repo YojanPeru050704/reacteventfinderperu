@@ -34,9 +34,11 @@ export const searchEventsPerText = (searchText, region)  => async dispatch => {
         let data = "";
 
         if (searchText != null && searchText !== "")        
-            resp = await fetch("http://localhost:5000/events?title_like=" + searchText + "&region=" + region);  
+            //resp = await fetch("http://localhost:5000/events?title_like=" + searchText + "&region=" + region);  
+            resp = await fetch("/events?title_like=" + searchText + "&region=" + region);  
         else
-            resp = await fetch("http://localhost:5000/events?region=" + region);
+            //resp = await fetch("http://localhost:5000/events?region=" + region);
+            resp = await fetch("/events?region=" + region);
          
         data = await resp.json();
 
@@ -83,7 +85,8 @@ export const getEventsPerRegion = ()  => async dispatch => {
 
     try{
 
-        const resp = await fetch("http://localhost:5000/events");
+        //const resp = await fetch("http://localhost:5000/events");
+        const resp = await fetch("/events");
         const data = await resp.json();
 
         dispatch({
@@ -107,7 +110,8 @@ export const addEvent = (event)  => async dispatch => {
 
     try{
 
-        const resp = await fetch("http://localhost:5000/events",
+        //const resp = await fetch("http://localhost:5000/events",
+        const resp = await fetch("/events",
             {
                method:'POST',
                body:JSON.stringify(event),
@@ -141,7 +145,8 @@ export const updateEvent = (event)  => async dispatch => {
 
     try{
 
-        const res = await fetch(`http://localhost:5000/events/${event.id}`,
+        //const res = await fetch(`http://localhost:5000/events/${event.id}`,
+        const res = await fetch(`/events/${event.id}`,
             {
                method:'PUT',
                body:JSON.stringify(event),
@@ -175,7 +180,8 @@ export const deleteEvent = (id)  => async dispatch => {
     try{
 
         
-        await fetch(`http://localhost:5000/events/${id}`,
+        //await fetch(`http://localhost:5000/events/${id}`,
+        await fetch(`/events/${id}`,
             {
                method:'DELETE'               
             }                            

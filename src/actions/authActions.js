@@ -15,13 +15,15 @@ export const authenticateUser = (user)  => async dispatch => {
         
         console.log(vpassword);
 
-        let resp = await fetch("http://localhost:5000/users?email=" + vemail + "&password=" + vpassword);
+        //let resp = await fetch("http://localhost:5000/users?email=" + vemail + "&password=" + vpassword);
+        let resp = await fetch("/users?email=" + vemail + "&password=" + vpassword);
         let data = await resp.json();
 
         if (data.length > 0){
             console.log(data[0].region);    
 
-            let respregion = await fetch("http://localhost:5000/regions?id=" + data[0].region);    
+            //let respregion = await fetch("http://localhost:5000/regions?id=" + data[0].region);    
+            let respregion = await fetch("/regions?id=" + data[0].region);    
             let dataregion = await respregion.json();
 
             if (dataregion.length > 0){
@@ -38,7 +40,8 @@ export const authenticateUser = (user)  => async dispatch => {
             })
         }
         else{
-            resp = await fetch("http://localhost:5000/users?email=" + vemail);
+            //resp = await fetch("http://localhost:5000/users?email=" + vemail);
+            resp = await fetch("/users?email=" + vemail);
             data = await resp.json();
 
             if (data.length === 0)
@@ -70,7 +73,8 @@ export const existsUserEmail = (useremail)  => async dispatch => {
     let exists = "0";
 
     try{
-        const resp = await fetch("http://localhost:5000/users?email=" + useremail);
+        //const resp = await fetch("http://localhost:5000/users?email=" + useremail);
+        const resp = await fetch("/users?email=" + useremail);
         const data = await resp.json();
         
 
@@ -127,7 +131,8 @@ export const createUser = (user)  => async dispatch => {
     try{
         debugger;
 
-        const resp = await fetch("http://localhost:5000/users",
+        //const resp = await fetch("http://localhost:5000/users",
+        const resp = await fetch("/users",
             {
                method:'POST',
                body:JSON.stringify(user),
